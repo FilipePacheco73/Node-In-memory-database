@@ -1,0 +1,26 @@
+POST http://localhost:5500/videos
+Content-Type: application/json
+
+{
+    "title": "Video 1",
+    "description": "This is the first video",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:5500/videos?search=node
+
+###
+
+PUT http://localhost:5500/videos/30cba749-2948-4ba1-a243-3858d9edd8e2
+Content-Type: application/json
+
+{   
+    "title": "Video 1",
+    "description": "This is the new description of the first video",
+    "duration": 180
+}
+
+### 
+DELETE http://localhost:5500/videos/30cba749-2948-4ba1-a243-3858d9edd8e2
